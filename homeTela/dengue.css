@@ -1,0 +1,140 @@
+/* Adicione a propriedade box-sizing: border-box para evitar problemas com a largura total */
+* {
+  box-sizing: border-box;
+}
+
+.logo img {
+  padding: 20px;
+  max-width: 280px;
+  height: auto;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 1%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Ajuste conforme necessário */
+}
+
+@media (max-width: 768px) {
+  .button-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  margin: 0; /* Remova o padding para evitar espaçamento extra */
+}
+
+header {
+  background: linear-gradient(45deg, #ff1313, #3f3a3a);
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.butao {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer; /* Adicione cursor: pointer para indicar que é clicável */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .button-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  color: #333;
+}
+
+.chart-container {
+  width: 100%;
+  text-align: center;
+}
+
+.chart {
+  width: 100%;
+  max-width: 775px;
+  margin: 0 auto; /* Corrija a propriedade margin que estava com valor incorreto */
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.legend {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.legend span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.legend .confirmed { color: #a9a9a9; }
+
+.legend .suspected { color: #e74c3c; }
+
+.legend .recovered { color: #2ecc71; }
+
+.footer {
+  background: linear-gradient(45deg, #363636, #363636);
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-top: auto;
+}
+
+.footer h5 {
+  color: #ffffff;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer ul li {
+  padding: 5px 0;
+}
+
+.footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.copy p {
+  margin-bottom: 0;
+}
